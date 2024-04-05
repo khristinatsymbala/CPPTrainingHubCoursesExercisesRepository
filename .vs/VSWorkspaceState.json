@@ -3,9 +3,13 @@
     "",
     "\\Learn C\u002B\u002B and Make a Game from Scratch",
     "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears",
+    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\build",
     "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears",
-    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears\\src"
+    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears\\include",
+    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears\\include\\framework",
+    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears\\src",
+    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears\\src\\framework"
   ],
-  "SelectedNode": "\\Learn C\u002B\u002B and Make a Game from Scratch",
+  "SelectedNode": "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears\\src\\framework\\Application.cpp",
   "PreviewInSolutionExplorer": false
 }
