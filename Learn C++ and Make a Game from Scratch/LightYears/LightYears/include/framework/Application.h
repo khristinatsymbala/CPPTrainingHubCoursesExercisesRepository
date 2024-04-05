@@ -10,7 +10,15 @@ namespace ly{
 		void Run();
 
 	private:
+
+		void Tick(float deltaTime);
+		void Render();
+
 		//m - member variable
 		sf::RenderWindow mWindow;
+		//frame counter
+		float mTargetFrameRate{};
+		//time setter
+		sf::Clock mTickClock;
 	};
 }

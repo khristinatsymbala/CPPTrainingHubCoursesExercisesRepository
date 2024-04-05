@@ -26,4 +26,8 @@ int main()
     app->Run();
 
     //allocating oh heap by unique pointers
+    //more safety - going one time
+    //std::unique_ptr<ly::Application> app{ new ly::Application };
+    //OR
+    //std::unique_ptr<ly::Application> app = std::make_unique<ly::Application>() ;
 }
