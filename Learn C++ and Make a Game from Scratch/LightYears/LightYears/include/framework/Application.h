@@ -11,8 +11,12 @@ namespace ly{
 
 	private:
 
-		void Tick(float deltaTime);
-		void Render();
+		void TickInternal(float deltaTime);
+		void RenderInternal();
+
+		virtual void Render();
+		virtual void Tick(float deltaTime);
+		
 
 		//m - member variable
 		sf::RenderWindow mWindow;

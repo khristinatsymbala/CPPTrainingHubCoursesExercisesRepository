@@ -15,6 +15,9 @@ namespace ly {
         float accumulatedTime = 0.f; // накопичений час
         float targetDeltaTime = 1.f / mTargetFrameRate;
 
+
+        
+
         while (mWindow.isOpen())
         {
             sf::Event windowEvent;
@@ -22,8 +25,9 @@ namespace ly {
             {
                 if (windowEvent.type == sf::Event::Closed)
                     mWindow.close();
+                    
             }
-
+            RenderInternal();
         }
 
         //the amount of time that has elapsed
@@ -32,15 +36,34 @@ namespace ly {
         while (accumulatedTime > targetDeltaTime)
         {
             accumulatedTime -= targetDeltaTime;
-            Tick(targetDeltaTime);
-            Render();
+            TickInternal(targetDeltaTime);
+            
         }
 	}
-    void Application::Tick(float deltaTime)
+    void Application::TickInternal(float deltaTime)
     {
-        std::cout << "ticking at framerate" << 1.f / deltaTime << std::endl;
+        Tick(deltaTime);
+    }
+
+    //template function/programming pattern - set up what needs to be done before and after a step
+void Application::RenderInternal()
+    {
+        mWindow.clear();
+
+        Render();
+
+        mWindow.display();
     }
     void Application::Render()
     {
+        sf::CircleShape shape(100.f);
+        shape.setFillColor(sf::Color::Green);
+        mWindow.draw(shape);
     }
+
+    void Application::Tick(float deltaTime)
+    {
+
+    }
+    
 }
