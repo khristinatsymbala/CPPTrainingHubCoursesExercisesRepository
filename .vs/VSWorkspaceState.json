@@ -3,13 +3,13 @@
     "",
     "\\Learn C\u002B\u002B and Make a Game from Scratch",
     "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears",
-    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\build",
-    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears",
-    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears\\include",
-    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears\\include\\framework",
-    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears\\src",
-    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears\\src\\framework"
+    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsEngine",
+    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsGame",
+    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsGame\\include",
+    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsGame\\include\\gameFramework",
+    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsGame\\src",
+    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsGame\\src\\gameFramework"
   ],
-  "SelectedNode": "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYears\\src\\framework\\Application.cpp",
+  "SelectedNode": "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsGame\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }

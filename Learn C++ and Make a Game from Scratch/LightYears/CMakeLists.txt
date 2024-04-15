@@ -12,11 +12,13 @@ set(CMAKE_CXX_EXTENSIONS       OFF)
 
 
 # create a variable
+set(LIGHT_YEARS_ENGINE_TARGET_NAME LightYearsEngine)
 set(LIGHT_YEARS_GAME_TARGET_NAME LightYearsGame)
 
 #include operation - from subdirectory to main cmake file
-add_subdirectory(LightYears)
+add_subdirectory(LightYearsEngine)
+add_subdirectory(LightYearsGame)
 
-#add_executable(${LIGHT_YEARS_GAME_TARGET_NAME}
+#add_executable(${LIGHT_YEARS_ENGINE_TARGET_NAME}
 	#${CMAKE_CURRENT_SOURCE_DIR}/LightYears/src/main.cpp
 #)
