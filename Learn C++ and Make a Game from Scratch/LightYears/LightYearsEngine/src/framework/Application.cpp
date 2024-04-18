@@ -1,5 +1,6 @@
 #include "framework/Application.h"
 #include <iostream>
+#include "framework/Core.h"
 
 namespace ly {
 	Application::Application()
@@ -15,9 +16,6 @@ namespace ly {
         float accumulatedTime = 0.f; // накопичений час
         float targetDeltaTime = 1.f / mTargetFrameRate;
 
-
-        
-
         while (mWindow.isOpen())
         {
             sf::Event windowEvent;
@@ -27,18 +25,20 @@ namespace ly {
                     mWindow.close();
                     
             }
-            RenderInternal();
+            
+            float frameDeltaTime = mTickClock.restart().asSeconds();
+            //the amount of time that has elapsed
+            accumulatedTime += frameDeltaTime;
+            //limit frame rate
+            while (accumulatedTime > targetDeltaTime)
+                 {  accumulatedTime -= targetDeltaTime;
+                    TickInternal(targetDeltaTime);    }
+
+             LOG("ticking at framerate: %f", 1.f / frameDeltaTime);
+        RenderInternal();
         }
 
-        //the amount of time that has elapsed
-        accumulatedTime += mTickClock.restart().asSeconds();
-        //limit frame rate
-        while (accumulatedTime > targetDeltaTime)
-        {
-            accumulatedTime -= targetDeltaTime;
-            TickInternal(targetDeltaTime);
-            
-        }
+        
 	}
     void Application::TickInternal(float deltaTime)
     {
