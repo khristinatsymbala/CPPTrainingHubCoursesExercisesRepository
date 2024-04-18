@@ -1,12 +1,14 @@
 #include "framework/Application.h"
 #include <iostream>
 #include "framework/Core.h"
+#include "framework/World.h"
 
 namespace ly {
 	Application::Application()
 		:mWindow{ sf::VideoMode(500, 500), "Light Years" },
         mTargetFrameRate{60.f},
-        mTickClock{}
+        mTickClock{},
+        currentWorld{nullptr}
 	{
 		
 	}
@@ -42,7 +44,12 @@ namespace ly {
 	}
     void Application::TickInternal(float deltaTime)
     {
-        Tick(deltaTime);
+        Tick(deltaTime); 
+
+        if (currentWorld) {
+            currentWorld->BeginPlayInternal();
+            currentWorld->TickInternal(deltaTime);
+        }
     }
 
     //template function/programming pattern - set up what needs to be done before and after a step
