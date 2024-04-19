@@ -1,6 +1,6 @@
 #include<iostream>
 
-int markmain() {
+int main() {
 
 	int marks[10] = {};
 
