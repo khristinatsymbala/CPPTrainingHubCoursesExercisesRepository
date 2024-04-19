@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Beginning C\u002B\u002B Programming - From Beginner to Beyond",
-    "\\Learn C\u002B\u002B and Make a Game from Scratch",
-    "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears",
+    "\\Data Structures \u0026 Algorithms Essentials using C\u002B\u002B",
+    "\\Data Structures \u0026 Algorithms Essentials using C\u002B\u002B\\01_Arrays",
+    "\\Data StructuresANDAlgorithms Essentials using C\u002B\u002B",
     "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsEngine",
     "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsEngine\\include",
     "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsEngine\\include\\framework",
@@ -11,6 +11,6 @@
     "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsEngine\\src\\framework",
     "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsGame"
   ],
-  "SelectedNode": "\\Learn C\u002B\u002B and Make a Game from Scratch\\LightYears\\LightYearsEngine\\CMakeLists.txt",
+  "SelectedNode": "\\Data Structures \u0026 Algorithms Essentials using C\u002B\u002B\\Data Structures \u0026 Algorithms Essentials using C\u002B\u002B.sln",
   "PreviewInSolutionExplorer": false
 }
