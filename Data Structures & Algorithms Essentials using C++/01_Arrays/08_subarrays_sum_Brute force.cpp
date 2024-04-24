@@ -2,26 +2,32 @@
 
 // Subarray is small part of array
 // Problem : Print all subarrays of a given array
-void printSubarrays(int arr[], int n)
+int printSubarrays(int arr[], int n)
 {
+    // 02_
+    int largestSum = 0;
     for (int i = 0; i < n; i++)
     {
         for (int j = i; j < n; j++)
         {
+            int subbarraySum = 0;
+            // 01_add new variable to store a current result
             for (int k = i; k <= j; k++)
             {
-                std::cout << arr[k] << ",";
+                subbarraySum += arr[k];
             }
-            std::cout << std::endl;
+            // cheak is current sum of array > largestsum(previous result)
+            largestSum = std::max(largestSum, subbarraySum);
         }
     }
+    return largestSum;
 }
 
-// Print the sum of each subarray & find out the largest
+// find out the largest
 
 int main()
 {
-    int array[] = {10, 20, 30, 40, 56, 78, 89};
+    int array[] = {-1, 4, 5, -12, 8, 4, 2};
     int n = sizeof(array) / sizeof(int);
 
     printSubarrays(array, n);
