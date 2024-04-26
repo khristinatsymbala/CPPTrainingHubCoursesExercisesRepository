@@ -2,7 +2,7 @@
 
 // Subarray is small part of array
 // Problem : find out the largest sum of subarrays
-//Brute force approach O(N^3)
+// Brute force approach O(N^3) - in kube
 int largestSumSubarrays(int arr[], int n)
 {
     // 02_
@@ -23,7 +23,6 @@ int largestSumSubarrays(int arr[], int n)
     }
     return largestSum;
 }
-
 
 int main()
 {
