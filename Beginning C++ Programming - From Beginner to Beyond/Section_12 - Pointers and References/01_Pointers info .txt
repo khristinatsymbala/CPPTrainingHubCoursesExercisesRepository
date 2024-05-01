@@ -1,0 +1,58 @@
+What is Pointer?
+
+1) A variable - whose value is an address
+2) What can be at that address - another variable, a function
+3)To use the data that the pointer is pointing to you MUST know its type
+
+Why use a pointers?
+
+1) Inside function< pointers can be used to access data that are defined outside the function.
+Those variables, may not be in scope so you can`t access them by their name
+
+2) Pointers can be used to operate on arrays
+
+3) We can allocate memory dynamically on the heap or free store 
+    - This memory doesn`t even have a variable name 
+    - The only way to get to it is via pointer
+
+4) With OOP pointers are polymorphysm work!
+
+5) Can access specific addresses in memory
+    - useful in embedded and systems applications
+
+/////////////////////////////////////////////////////////
+
+Declaring a pointer
+        variable_type *pointer_name;  int *int_ptr;
+
+Initizing pointer:
+        variable_type *pointer_name {nulptr};  int *int_ptr{};
+
+Initizing pointer variables to 'point nowhere'
+    - Always initialize pointers
+    - Uninitialize pointers contain garbage data and can 'point anywhere'
+    - initializt to zero or nullptr(C++ 11) represent address zero
+        - implies that the pointer is 'pointing nowhere'
+    - If you don`t want initialize a pointer to point to a variable or function
+        then you should initialize it to nullptr to 'make it null'
+
+/////////////////////////////////////////////////////////
+Accessing Pointer address
+& the address operator
+
+-variable are stored in unique addresses
+-Unary operator (+ -)
+- Evaluate tothe address of its operand
+    - operand cannot be a constant or expression that evaluates to temp value
+    - операнд не може бути константою або виразом, який обчислюється як тимчасове значення
+
+
+
+size of a pointer variable
+- don`t confuse the size of a pointer and the size of what it points to
+- All pointers in program have the same size
+- They may be pointing to very large or very small types
+
+
+Typed pointers:
+    The compiler will make sure that the address stored in a pointer variable is of correct type
