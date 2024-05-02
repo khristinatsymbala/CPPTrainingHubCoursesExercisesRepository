@@ -1,0 +1,37 @@
+Passing pointers to a function
+    const and Pointers
+
+    There are several ways to qualify pointers using const:
+        1) Pointers to constants
+            - The data pointed to by the pointers is constant and cannot be changed;
+            - The pointer itself change and point somewhere else;
+
+                int hight score {100};
+                int low score {65};
+                const int *score_ptr{&high_score};
+
+                *score_ptr = 86; //ERROR
+                score_ptr = &low_score; // OK
+
+ 
+        2) Constant pointers
+            - The data pointed to by the pointerd can be changed;
+            - The pointer itself cannot change and point somewhere else;
+
+                int hight score {100};
+                int low score {65};
+                int *const score_ptr{&high_score};
+
+                *score_ptr = 86; //OK
+                score_ptr = &low_score; // ERROR
+
+        3) Constant pointers to constants 
+            - The data pointed to by the pointer is constant and be changed;
+            - The pointer itself cannot change and point somewhere else;
+
+                 int hight score {100};
+                int low score {65};
+                const int *const score_ptr{&high_score};
+
+                *score_ptr = 86; //ERROR
+                score_ptr = &low_score; // ERROR
