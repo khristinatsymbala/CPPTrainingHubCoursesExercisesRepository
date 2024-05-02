@@ -2,7 +2,7 @@
 using namespace std;
 
 //Address of operator - & 
-
+//&bucket => address
 
 int main(){
 
