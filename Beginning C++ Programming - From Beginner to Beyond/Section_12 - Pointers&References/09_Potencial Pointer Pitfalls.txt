@@ -1,0 +1,29 @@
+Potencial Pointer Pitfalls:
+    - Uninitialize pointers 
+
+        int *int_ptr; //ointing anywhere
+        .....
+        *int_ptr = 100; //Hopefully a crash
+
+    - Dangling pointers - кутові покажчики
+        - Pointer that is pointing to released memory 
+            - For example, 2 pointers point to the same data
+            - 1 pointer releases the data with delete
+            - The other pointer accesses the release data
+
+        - Pointer that points to memory that is inalid
+            - We saw this when we returned a pointer to a function local variable
+        
+    - Not checking if new failed to allocate memory
+        - If new fails an exception is thrown - Якщо new не вдається, створюється виняток
+        - We can use exception handling to catch exceptions - Ми можемо використовувати обробку винятків, щоб перехопити винятки
+        - Dereferencing a null pointer will cause your program to crash - Розіменування нульового вказівника призведе до збою програми
+
+    - Leaking memory
+        - Forgetting to reliase allocated memory with delete
+        - If you lose your pointer to the storage allocated on the heap you have not way to get to that storage again 
+            - for example But what if you lose the pointer, say you allocated the memory in a function and the pointer
+            was declared in the function and the function terminates. Now you just lost your pointer.
+            There's no way you can reference that allocated memory on the heap.
+        - The memory is orphaned or leaked
+        - One of the most common pointer problems
